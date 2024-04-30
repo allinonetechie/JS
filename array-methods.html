@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p>The length property returns the length of an array:</p>
+
+<p id="demo"></p>
+<br />
+<p>Array to string:</p>
+<p id="demo1"></p>
+<br />
+<p>Array Join:</p>
+<p id="demo2"></p>
+<br />
+<p>Array pop:</p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<br />
+<p>Array push:</p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<br />
+<p>Array push:</p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+
+<script>
+
+// array length
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let size = fruits.length;
+document.getElementById("demo").innerHTML = size;
+
+//convert to string
+const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits1.toString();
+
+//join array
+const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo2").innerHTML = fruits3.join(" * ");
+
+//array pop
+const fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo3").innerHTML = fruits4;
+fruits4.pop();
+document.getElementById("demo4").innerHTML = fruits4;
+
+//array push
+const fruits5 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo5").innerHTML = fruits5;
+fruits5.push("Kiwi");
+document.getElementById("demo6").innerHTML = fruits5;
+
+//array shift
+const fruits6 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo7").innerHTML = fruits6;
+fruits6.shift();
+document.getElementById("demo8").innerHTML = fruits6;
+
+</script>
+
+</body>
+</html>
