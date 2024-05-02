@@ -5,6 +5,9 @@
 
 <p id="demo"></p>
 
+<p>Car Object:</p>
+<p id="carInfo"></p>
+
 <script>
 class Car {
   constructor(name, year) {
@@ -19,9 +22,21 @@ class Car {
 const date = new Date();
 let year = date.getFullYear();
 
-const myCar = new Car("Ford", 2014);
+const myCar = new Car("toyota", 2014);
+
 document.getElementById("demo").innerHTML=
-"My car is " + myCar.age(year) + " years old.";
+"My car brand is " + myCar.name + " and it is " + myCar.age(year) + " years old.";
+
+if(myCar.name == "Mercedes"){
+document.getElementById("demo").style.color = "green";
+}else{
+    document.getElementById("demo").style.color = "orange";
+}
+
+var carInfoParagraph = document.getElementById("carInfo");
+carInfoParagraph.style.fontWeight = "bold";
+carInfoParagraph.textContent = JSON.stringify(myCar);
+
 </script>
 
 </body>
